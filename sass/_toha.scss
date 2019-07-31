@@ -1,0 +1,128 @@
+.blue {
+	color: #0071BC;
+}
+.yellow {
+	color: #FBB03B;
+}
+.sec_6 {
+	p {
+	    line-height: 36px;
+	    font-size: 30px;
+	    font-family: '__Futura PT_5';
+	    font-weight: 700;
+	}
+
+	div.blue {
+		line-height: 30px;
+	    font-size: 25px;
+	    margin-top: 45px;
+	    color: #0071BC;
+	    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	}
+	img {
+		margin: -100px 0;
+	}
+
+	.right {
+		margin-top: 160px;
+	}
+} 
+.text-with-white-bg {
+	padding: 10px;
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		background-image: url('../img/17.png');
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	color: #FBB03B;
+	line-height: 24px;
+    font-size: 20px;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+}
+.sec_7 {
+	background-image: url('../img/3.jpg');
+	background-size: cover;
+	position: relative;
+	margin-top: 100px;
+
+	.white-gradient {
+		height: 400px;
+		position: absolute;
+		z-index: 0;
+		&.up {
+			top: 0;
+			left: 0;
+			right: 0;
+			background: linear-gradient(rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 10%, rgba(0, 0, 0, 0) 80%);	
+		}
+    	
+	}
+	.container {
+		position: relative;
+		z-index: 1;
+		padding-top: 350px;
+	}
+	.sec_title {
+	    color: #FBB03B;
+	    line-height: 58px;
+	    font-size: 48px;
+	    font-family: '__Futura PT_5';
+	    font-weight: 700;
+	}
+	.cash-list {
+		padding: 0;
+		li {
+			list-style: none;
+		    color: #FFFFFF;
+		    line-height: 24px;
+		    font-size: 20px;
+		    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+		    position: relative;
+		    padding-left: 50px;
+		    margin-bottom: 25px;
+		    &:before {
+		    	content: '';
+		    	background-image: url('../img/money-bag-with-dollar-symbol.png');
+		    	background-size: contain;
+		    	background-repeat: no-repeat;
+		    	width: 28px;
+		    	height: 28px;
+		    	position: absolute;
+		    	top: 0;
+		    	left: 0;
+
+		    }
+		}
+	}
+
+
+	.register {
+		padding: 40px 20px;
+		display: inline-block;
+	    background-color: #FBB03B;
+	    border-radius: 400px;
+	    color: #0071BC;
+	    line-height: 36px;
+	    position: relative;
+	    top: 0;
+	    font-size: 30px;
+	    text-decoration: none;
+	    text-align: center;
+	    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	    font-weight: bold;
+	    transition: all .3s;
+
+	    &:hover {
+	    	top: -2px;
+	    }
+	}
+}
