@@ -129,3 +129,45 @@
         color: #fff;
     }
 }
+// ==================================================
+// sec_3
+// ==================================================
+
+.sec_3 {
+    padding-top: 40px;
+    padding-bottom: 70px;
+    p {
+        color: #0071BC;
+        line-height: 26px;
+        font-size: 22px;
+        text-align: center;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        margin-top: 15px;
+    }
+
+    .row_blocks {
+        margin: 30px 0;
+    }
+
+    h2.blue {
+        margin-top: 80px;
+    }
+}
+
+h2.blue {
+    color: #0071BC;
+    line-height: 36px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+}
+
+h2.orange {
+    color: #FBB03B;
+    line-height: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-weight: bold;
+}
