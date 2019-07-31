@@ -46,11 +46,12 @@ $(document).ready(function() {
 
     //////////////////////// Menu scroll to section for landing
     $('a.page-scroll').click(function(event) {
+        event.preventDefault();
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 50
         }, 1000);
-        event.preventDefault();
+        
     });
 });
 // jquery end

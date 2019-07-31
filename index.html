@@ -37,7 +37,7 @@
     </header> <!-- section-header.// -->
 
     <!-- ========================= sec_1 ========================= -->
-    <section class="sec_1 with_after">
+    <section class="sec_1 with_after" id="sec_1">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -204,10 +204,10 @@
         <div class="white-gradient up"></div>
         <div class="container">
             <div class="row justify-content-end align-items-center">
-                <div class="col-md-6">
-                    <a class="register" data-toggle="modal" data-target="#formModal" href="">Зарегистрироваться бесплатно</a>
+                <div class="col-md-5">
+                    <a class="register-btn" data-toggle="modal" data-target="#formModal" href="">Зарегистрироваться бесплатно</a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <p class="sec_title">ЕСТЬ МАССА ДРУГИХ ВАРИАНТОВ</p>
                     <ul class="cash-list">
                         <li>Первоначальный взнос всего 30% от стоимости квартиры</li>
@@ -216,18 +216,56 @@
                         <li>При окончании строительства отдаете недвижимость застройщику в управление. Он выплачивает Вам от 7 до 10% в год от стоимости квартиры (самый популярный варианты).</li>
                     </ul>
                     <div class="text-with-white-bg">
-                       <span class="blue"> Есть еще масса других вариантов. Подробнее о каждом из них</span> расскажем на бесплатном мастер-классе
+                        <div>
+                            <span class="blue"> Есть еще масса других вариантов. Подробнее о каждом из них</span> расскажем на бесплатном мастер-классе     
+                        </div>
+                       
                     </div>
                 </div>
             </div>
         </div>
+        <img class="absolute-bottom" src="img/22.png">
     </section>
     <!-- ========================= /sec_7 ========================= -->
 
     <!-- ========================= sec_8 ========================= -->
     <section class="sec_8">
         <div class="container">
-            <div class="row"></div>
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <p class="sec_title">НА МАСТЕР-КЛАССЕ ВЫ УЗНАЕТЕ:</p>
+                    <ul class="check-list">
+                        <li>Как зарабатывать на аренде жилья в Таиланде, находясь в своем городе</li>
+                        <li>Где и как находить выгодные варианты для инвестирования</li>
+                        <li>«Подводные камни» при покупке недвижимости в Таиланде</li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <img src="img/1da179e1ca4c20eb92245134f86dc5ff-lossy.png">
+                </div>
+                <div class="col-md-7">
+                    <img src="img/90c8438b4bea1b6a207e11885b41eb53-lossy.png">
+                </div>
+                  <div class="col-md-5">
+                    <ul class="check-list">
+                        <li>Как начать с небольшой суммы и без опыта в сфере недвижимости</li>
+                        <li>Обзор самых прибыльных объектов в Таиланде, проверенных нами лично</li>
+                        <li>Как зарабатывать на жилье годами и при этом ездить отдыхать в Таиланд бесплатно</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-8">
+                    <p class="sec_title">НО Я НЕ СОБИРАЮСЬ ПЕРЕЕЗЖАТЬ В ТАИЛАНД…</p>
+                    <p>Не переживайте. На мастер-классе мы расскажем, как Вы можете <span class="font-weight-bold">инвестировать и зарабатывать на недвижимости в Таиланде, не покидая свой родной город</span></p>  
+                    <a class="register-btn page-scroll" href="#sec_1">Раскрыть секретную форму</a>  
+                </div>
+                <div class="col-md-4">
+                    <img src="img/c41475d97af184feb3076d4ca46bd9dc-lossy.png">
+                </div>
+                
+
+            </div>
         </div>
     </section>
     <!-- ========================= /sec_8 ========================= -->
@@ -251,22 +289,28 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Регистрация</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+             <form action="" class="form" method="post" action="https://api.bpa.bz/api.client2crm/" novalidate="novalidate">
+                <input class="input" type="text" name="firstname" tabindex="2" placeholder="Введите имя">
+                <input class="input" type="tel" name="phone" tabindex="3" placeholder="Телефон">
+                <input class="input" type="email" name="email" tabindex="1" placeholder="Email">
+                <button class="submit-btn" type="submit" value="Зарегистрироваться" tabindex="4">
+                    Зарегистрироваться бесплатно
+                </button>
+            </form>
           </div>
         </div>
       </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- custom javascript -->
