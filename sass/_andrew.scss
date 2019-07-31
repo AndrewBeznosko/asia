@@ -1,5 +1,44 @@
+// ==================================================
+// header
+// ==================================================
+
+header {
+    .navbar {
+        background-color: rgba(0, 0, 0, .5);
+    }
+}
+
+.btn.btn-outline-light {
+    border-width: 2px;
+    border-color: #FFFFFF;
+    background-color: transparent;
+    border-radius: 400px;
+    color: #FFFFFF !important;
+    line-height: 23px;
+    font-size: 19px !important;
+    text-align: center;
+    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    padding: 5px 35px 7px !important;
+    margin-left: 50px;
+
+    &:active {
+        color: #000 !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        font-size: 18px;
+    }
+}
+// ==================================================
+// sec_1
+// ==================================================
+
 .sec_1 {
-    padding: 100px 0;
+    padding: 180px 0 170px;
     background: transparent url("../img/1%20copy.jpg?crc=95492434") no-repeat center center;
     background-size: cover;
     min-height: 80vh;
@@ -9,6 +48,7 @@
     -ms-align-items: center;
     align-items: center;
     position: relative;
+    min-height: 100vh;
 
     .container {
         z-index: 1;
@@ -55,7 +95,7 @@
 }
 
 .form {
-    max-width: 320px;
+    // max-width: 320px;
     width: 100%;
 
     .input {
@@ -124,7 +164,19 @@
 // ==================================================
 
 .sec_2 {
-    margin: 90px 0 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -350px;
+        left: 0;
+        width: 100%;
+        height: 150%;
+        background-image: url("../img/22.png");
+        background-size: 100% auto;
+    }
 
     .sec_title {
         color: #FBB03B;
@@ -136,6 +188,10 @@
         &.first {
             margin-top: 80px;
         }
+    }
+
+    .row_block {
+        margin-top: -50px;
     }
 
     p {
@@ -158,7 +214,7 @@
 
 .sec_3 {
     padding-top: 40px;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 
     p {
         color: #0071BC;
@@ -171,6 +227,10 @@
 
     .row_blocks {
         margin: 30px 0;
+
+        & > div {
+            margin-bottom: 40px;
+        }
     }
 
     h2.blue {
@@ -202,7 +262,21 @@ h2.orange {
 .sec_4 {
     background: transparent url("../img/2.jpg") no-repeat center center;
     background-size: cover;
-    padding: 100px 0;
+    padding: 250px 0;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 415px;
+        background-image: url("http://voron.store/test/images/22.png?crc=413217920");
+        background-size: 100% auto;
+        background-position: bottom;
+        z-index: 1;
+    }
 
     .sec_title {
         color: #FBB03B;
@@ -210,6 +284,7 @@ h2.orange {
         font-size: 48px;
         font-family: '__Futura PT_5';
         font-weight: 700;
+        margin-bottom: 60px;
     }
 
     .list {
@@ -231,6 +306,7 @@ h2.orange {
             font-size: 22px;
             text-align: left;
             font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, .6);
         }
     }
 
@@ -258,7 +334,20 @@ h2.orange {
 // ==================================================
 
 .sec_5 {
-    padding: 70px 0;
+    padding: 20px 0 0;
+    position: relative;
+
+    &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        width: 100%;
+        height: 402px;
+        background-image: url("../img/22.png");
+        background-size: 100% auto;
+    }
 
     .sec_title {
         color: #FBB03B;
