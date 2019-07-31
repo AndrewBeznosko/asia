@@ -120,6 +120,39 @@
     }
 }
 // ==================================================
+// sec_2
+// ==================================================
+
+.sec_2 {
+    margin: 90px 0 0;
+
+    .sec_title {
+        color: #FBB03B;
+        line-height: 58px;
+        font-size: 48px;
+        font-family: '__Futura PT_5';
+        font-weight: 700;
+
+        &.first {
+            margin-top: 80px;
+        }
+    }
+
+    p {
+        color: #0071BC;
+        line-height: 30px;
+        font-size: 25px;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        font-weight: normal;
+    }
+
+    img {
+        max-width: 360px;
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+}
+// ==================================================
 // sec_3
 // ==================================================
 
@@ -199,5 +232,67 @@ h2.orange {
             text-align: left;
             font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
         }
+    }
+
+    .txt_img_bg {
+        color: #0071BC;
+        line-height: 26px;
+        font-size: 22px;
+        text-align: left;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        background: transparent url("../img/17.png") no-repeat 0 50%;
+        background-size: cover;
+        padding: 10px 50px;
+        max-width: 694px;
+        text-align: center;
+    }
+
+    .btn_wrapp {
+        margin-top: 40px;
+        max-width: 694px;
+        text-align: center;
+    }
+}
+// ==================================================
+// sec_4
+// ==================================================
+
+.sec_5 {
+    padding: 70px 0;
+
+    .sec_title {
+        color: #FBB03B;
+        line-height: 58px;
+        font-size: 48px;
+        font-family: '__Futura PT_5';
+        font-weight: 700;
+        max-width: 500px;
+        margin-left: auto;
+        margin-bottom: -135px;
+        text-align: right;
+    }
+
+    img {
+        height: 220px;
+        width: auto;
+    }
+
+    h3 {
+        color: #FBB03B;
+        line-height: 36px;
+        font-size: 30px;
+        text-align: left;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    p {
+        color: #0071BC;
+        line-height: 24px;
+        font-size: 20px;
+        text-align: left;
+        font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+        font-weight: normal;
     }
 }
