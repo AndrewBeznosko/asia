@@ -89,7 +89,7 @@
 .white-gradient {
 	height: 400px;
 	position: absolute;
-	z-index: 0;
+	z-index: 1;
 	&.up {
 		top: 0;
 		left: 0;
@@ -115,7 +115,7 @@
 		width: 100%;
 		position: absolute;
 		bottom: -700px;
-
+		z-index: 10;
 		@media (max-width: 768px) {
 	 		bottom: auto;
 	 	}
