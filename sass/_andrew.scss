@@ -25,7 +25,6 @@ header {
         color: #000 !important;
     }
 }
-
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: 1rem;
@@ -383,5 +382,198 @@ h2.orange {
         text-align: left;
         font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
         font-weight: normal;
+    }
+}
+// ==================================================
+// responcive
+// ==================================================
+@media (max-width: 767.97px) {
+    header .navbar {
+        padding: 0.2rem 1rem;
+    }
+
+    img.logo {
+        height: 40px;
+        width: auto;
+    }
+
+    .navbar-nav {
+        background: rgb(7, 34, 62);
+        margin-left: -15px !important;
+        margin-right: -15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .btn.btn-outline-light {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .sec_1 {
+        padding: 80px 0 30px;
+    }
+
+    .sec_1 .upper_title {
+        font-size: 20px;
+        margin-bottom: 20px;
+        font-weight: normal;
+    }
+
+    .sec_1 .sec_title {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .sec_1 .img_block {
+        margin-top: 0;
+        height: auto;
+        display: none;
+    }
+
+    .sec_1 .description {
+        max-width: 100%;
+    }
+
+    .form .input {
+        padding: 10px 20px;
+        border-width: 2px;
+    }
+
+    .form button {
+        font-size: 20px;
+        padding: 5px 15px;
+    }
+
+    .sec_2::after {
+        display: none;
+    }
+
+    .sec_2 .sec_title {
+        font-size: 27px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+
+    .sec_2 .sec_title.first {
+        font-size: 27px;
+        line-height: 30px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-top: 80px;
+    }
+
+    .sec_2 p {
+        line-height: 26px;
+        font-size: 20px;
+        text-align: center;
+        max-width: 240px;
+        margin: 15px auto 20px;
+    }
+
+    .sec_2 img {
+        width: 100%;
+        max-width: 250px;
+        margin: 15px auto 20px;
+        display: block;
+    }
+
+    .sec_3 .row_blocks {
+        margin: 0 -15px;
+    }
+
+    .sec_3 .row_blocks img {
+        max-width: 110px;
+    }
+
+    .sec_3 p {
+        line-height: 24px;
+        font-size: 20px;
+    }
+
+    .sec_3 h2.blue {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    h2.orange {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    .sec_4 {
+        padding: 30px 0;
+    }
+
+    .sec_4::before {
+        display: none;
+    }
+
+    .sec_4 .sec_title {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .sec_4 .list p {
+        font-size: 20px;
+    }
+
+    .sec_4 .list span {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .sec_4 .txt_img_bg {
+        padding: 10px 20px;
+        background: #fff;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .sec_4 .b-btn {
+        font-size: 20px;
+        padding: 10px 50px;
+        line-height: 25px;
+    }
+
+    .sec_5::after {
+        display: none;
+    }
+
+    .sec_4 .btn_wrapp {
+        margin-top: 20px;
+    }
+
+    .sec_5 .sec_title {
+        font-size: 30px;
+        line-height: 32px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .sec_5 img {
+        max-width: 250px;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .sec_5 h3 {
+        font-size: 26px;
+    }
+
+    .sec_5 p {
+        font-size: 18px;
+    }
+
+    .sec_5 .row_blocks .item {
+        margin-top: 0 !important;
     }
 }
