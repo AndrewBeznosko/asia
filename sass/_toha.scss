@@ -1,3 +1,10 @@
+@mixin mobileFontSize($size, $lineHeight: $size + 6px) {
+    @media (max-width: 768px) {
+    	font-size: $size;
+    	line-height: $lineHeight;
+    }
+}
+
 .blue {
 	color: #0071BC;
 }
@@ -10,6 +17,7 @@
 	    font-size: 30px;
 	    font-family: '__Futura PT_5';
 	    font-weight: 700;
+	    @include mobileFontSize(24px);
 	}
 
 	div.blue {
@@ -18,13 +26,24 @@
 	    margin-top: 45px;
 	    color: #0071BC;
 	    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	    @include mobileFontSize(22px);
+	    
 	}
 	img {
 		margin: -100px 0;
+
+		@media (max-width: 768px) {
+			margin: 0;
+			margin-bottom: -50px;
+		}
 	}
 
 	.right {
 		margin-top: 160px;
+
+		@media (max-width: 768px) {
+			margin-top: 80px;
+		}
 	}
 } 
 .text-with-white-bg {
@@ -36,6 +55,14 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	@media (max-width: 768px) {
+		width: 100%;
+	    padding: 10px;
+	    height: auto;
+	    background-color: #fff;
+	    border-radius: 16px;
+	    margin-bottom: 30px;
+	}
 	&:before {
 		content: '';
 		position: absolute;
@@ -56,6 +83,7 @@
 	line-height: 24px;
     font-size: 20px;
     font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+    @include mobileFontSize(18px);
 }
 
 .white-gradient {
@@ -78,53 +106,74 @@
 	margin-top: 100px;
 	padding-bottom: 330px;
 	overflow: hidden;
-
+ 	@media (max-width: 768px) {
+ 		margin-top: 0;
+ 		background-position: 60% center;
+ 		padding-bottom: 70px;
+ 	}
 	.absolute-bottom {
 		width: 100%;
 		position: absolute;
 		bottom: -700px;
+
+		@media (max-width: 768px) {
+	 		bottom: auto;
+	 	}
 	}
 	.container {
 		position: relative;
 		z-index: 1;
 		padding-top: 280px;
+		@media (max-width: 768px) {
+	 		padding-top: 100px;
+
+	 		.row {
+	 			flex-direction: column-reverse;
+	 		}
+	 	}
 	}
 	.sec_title {
 	    color: #FBB03B;
 	    line-height: 58px;
 	    font-size: 48px;
+	    @include mobileFontSize(26px);
 	    font-family: '__Futura PT_5';
 	    font-weight: 700;
 	    text-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
+
+	    @media (max-width: 768px) {
+	    	text-shadow: none;
+	    }
 	}
 }
 
 .cash-list {
-		padding: 0;
-		li {
-			list-style: none;
-		    color: #FFFFFF;
-		    line-height: 24px;
-		    font-size: 20px;
-		    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
-		    position: relative;
-		    padding-left: 50px;
-		    margin-bottom: 25px;
-		    text-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
-		    &:before {
-		    	content: '';
-		    	background-image: url('../img/money-bag-with-dollar-symbol.png');
-		    	background-size: contain;
-		    	background-repeat: no-repeat;
-		    	width: 28px;
-		    	height: 28px;
-		    	position: absolute;
-		    	top: 0;
-		    	left: 0;
+	padding: 0;
+	li {
+		list-style: none;
+	    color: #FFFFFF;
+	    line-height: 24px;
+	    font-size: 20px;
+	    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
+	    position: relative;
+	    padding-left: 50px;
+	    margin-bottom: 25px;
+	    text-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
+	    @include mobileFontSize(18px);
+	    &:before {
+	    	content: '';
+	    	background-image: url('../img/money-bag-with-dollar-symbol.png');
+	    	background-size: contain;
+	    	background-repeat: no-repeat;
+	    	width: 28px;
+	    	height: 28px;
+	    	position: absolute;
+	    	top: 0;
+	    	left: 0;
 
-		    }
-		}
+	    }
 	}
+}
 
 .register-btn {
 	padding: 20px;
@@ -136,10 +185,15 @@
     position: relative;
     top: 0;
     font-size: 30px;
+    @include mobileFontSize(20px);
     text-align: center;
     font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
     font-weight: bold;
     transition: all .3s;
+
+    @media (max-width: 768px) {
+    	width: 100%;
+    }
 
     &:hover {
     	top: -2px;
@@ -148,6 +202,10 @@
 }
 
 .sec_8 {
+	@media (max-width: 768px) {
+ 		padding: 70px 0;
+ 		padding-bottom: 30px;
+ 	}
 	padding-bottom: 150px;
 	.sec_title {
 	    color: #FBB03B;
@@ -155,11 +213,12 @@
 	    font-size: 48px;
 	    font-family: '__Futura PT_5';
 	    font-weight: 700;
-
+	    @include mobileFontSize(22px);
 	    & + p {
 	    	color: #0071BC;
 		    line-height: 26px;
 		    font-size: 22px;
+		    @include mobileFontSize(18px);
 		    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 		    margin-bottom: 45px;
 
@@ -180,6 +239,7 @@
 		    position: relative;
 		    padding-left: 50px;
 		    margin-bottom: 25px;
+		    @include mobileFontSize(18px);
 		    &:before {
 			    content: '';
 			    display: block;
@@ -205,19 +265,27 @@
 	background-image: url('../img/4.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	@media (max-width: 768px) {
+    	padding: 70px 0;
+    	background-position: 20% center;
+    }
 	.sec_title {
 	    color: #FBB03B;
 	    line-height: 58px;
 	    font-size: 48px;
 	    font-family: '__Futura PT_5';
 	    font-weight: 700;
-
+	    margin-bottom: 35px;
+	    @include mobileFontSize(26px);
+	   
 	    & + p {
 	    	color: #0071BC;
 		    line-height: 26px;
 		    font-size: 22px;
 		    font-family: Helvetica, Helvetica Neue, Arial, sans-serif;
 		    margin-bottom: 45px;
+		    @include mobileFontSize(18px);
 
 		    & + a {
 		    	padding: 30px 45px;
@@ -227,9 +295,14 @@
 
 	.right {
 		padding-left: 50px;
+
+		@media (max-width: 768px) {
+			padding-left: 15px;
+	    }
 		p {
 			color: #FBB03B;
 			font-size: 25px;
+			@include mobileFontSize(20px);
 			line-height: 30px;
 			text-shadow: 0px 1px 3px rgba(0, 0, 0, .6);
 		}
@@ -270,6 +343,7 @@
 			padding: 20px;
 		}	
 	} 
+
 }
 img {
 	max-width: 100%;
