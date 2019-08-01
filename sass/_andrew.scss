@@ -385,6 +385,73 @@ h2.orange {
     }
 }
 // ==================================================
+// success
+// ==================================================
+
+.success {
+    .sec_1 {
+        min-height: 0;
+        padding: 150px 0 300px;
+    }
+
+    .sec_3 {
+        padding-top: 0;
+
+        .container {
+            margin-top: -100px;
+        }
+
+        .card {
+            h1 {
+                color: #FBB03B;
+                line-height: 58px;
+                font-size: 48px;
+                font-family: '__Futura PT_5';
+                font-weight: 700;
+                margin: 0;
+            }
+
+            p {
+                margin-top: 0;
+            }
+        }
+
+        .card-body {
+            padding: 3.25rem 1.25rem;
+        }
+    }
+
+    .glyphsSpriteApp_instagram__outline__24__grey_9 {
+        background-repeat: no-repeat;
+        background-position: -126px -128px;
+        height: 60px;
+        width: 62px;
+        display: block;
+        margin: 1rem auto 0;
+    }
+
+    .glyphsSpriteApp_instagram__outline__24__grey_9 {
+        background-image: url("https://www.instagram.com/static/bundles/es6/sprite_glyphs_33fe29edfd27.png/33fe29edfd27.png");
+    }
+    @media (max-width: 767.98px) {
+        .sec_1 {
+            padding: 50px 0 170px;
+        }
+
+        .sec_3 .card h1 {
+            margin-top: 20px;
+        }
+
+        .sec_3 .row_blocks img {
+            max-width: 100%;
+        }
+    }
+}
+
+.progress {
+    height: 2.3rem;
+}
+// ==================================================
 // responcive
 // ==================================================
 @media (max-width: 767.97px) {
