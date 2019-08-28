@@ -7,7 +7,7 @@ header {
     background-image: url("../img/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 100px 0;
+    padding: 50px 0 80px;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -125,6 +125,10 @@ button {
                 line-height: 1.2;
                 text-align: center;
                 margin-top: 20px;
+                border-radius: 5px;
+                background-color: rgba(255,255,255,0.302);
+                padding: 28px 34px;
+                border: solid 2px #fff;
 
                 span {
                     font-family: 'Futura PT Book';
@@ -271,21 +275,6 @@ button {
         }
     }
 
-    .old_price {
-        position: relative;
-
-        &::before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) rotate(-20deg);
-            background-color: #fa3030;
-            height: 3px;
-            width: 75px;
-        }
-    }
-
     .new_price {
         text-align: center;
         color: #381270;
@@ -293,6 +282,61 @@ button {
         font-family: "Bebas Neue";
         font-weight: bold;
     }
+}
+
+.old_price {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-20deg);
+        background-color: #fa3030;
+        height: 3px;
+        width: 75px;
+    }
+}
+
+.custom-control {
+    .custom-control-label {
+        font-family: "Bebas Neue";
+        font-weight: bold;
+        color: #381270;
+        font-size: 24px;
+    }
+
+    .old_price {
+        opacity: 0.7;
+
+        &::before {
+            height: 2px;
+            width: 45px;
+        }
+    }
+}
+
+.custom-control-label::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.45rem;
+}
+
+.custom-control-label::before {
+    width: 1.2rem;
+    height: 1.2rem;
+    top: 0.45rem;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #cc8b0c;
+    background-color: #ffd53d;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(255, 213, 61, .25);
 }
 
 a.btn {
