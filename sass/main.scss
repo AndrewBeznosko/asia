@@ -1,6 +1,11 @@
 @import 'fonts'; // @import 'common';
 // @import 'toha';
 // @import 'andrew';
+@media (min-width: 1400px) {
+    .container-tarif {
+        max-width: 1400px;
+    }
+}
 
 header {
     min-height: 100vh;
@@ -209,7 +214,6 @@ button {
     display: -ms-flex;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1100px;
     width: 100%;
     justify-content: space-between;
     align-items: flex-start;
@@ -218,7 +222,7 @@ button {
 .tarif {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 10px 32px 0 rgba(45, 45, 45, 0.21);
-    max-width: 491px;
+    max-width: 430px;
     padding-bottom: 45px;
     margin-bottom: 40px;
 
@@ -239,7 +243,7 @@ button {
     }
 
     .list {
-        padding: 35px 30px 30px;
+        padding: 35px 20px 30px;
 
         p {
             position: relative;
@@ -247,8 +251,8 @@ button {
             font-size: 21px;
             font-family: 'Futura PT Book';
             color: rgb(51, 9, 109);
-            line-height: 2;
-            margin-bottom: 10px;
+            line-height: 1.5;
+            margin-bottom: 15px;
 
             &::before {
                 content: '';
@@ -386,6 +390,33 @@ a.btn {
         background-color: #e2bc32;
     }
 }
+
+// ////////////////////////////////////////////////////////////////////////////////////////
+
+.modal-content {
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    form {
+        margin: 0 auto;
+    }
+}
+
+.modal-body {
+    padding: 2rem 0;
+}
+
+.modal-header {
+    color: #fff;
+}
+
+.close {
+    box-shadow: none;
+    color: #fff;
+    font-size: 30px;
+}
+
 @media (max-width: 767.98px) {
     header {
         padding: 50px 0;
@@ -451,5 +482,13 @@ a.btn {
     a.btn {
         max-width: 265px;
         height: 60px;
+    }
+
+    .modal-body {
+        padding: 0;
+    }
+
+    .modal-dialog {
+        margin: 0;
     }
 }
