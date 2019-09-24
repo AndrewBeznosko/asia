@@ -151,8 +151,11 @@ button {
         margin: 50px auto 0;
         max-width: 637px;
         width: 100%;
-        border: dotted 4px rgb(255, 206, 0);
-        padding: 15px 15px 20px;
+        border: dotted 4px #ffce00;
+        padding: 10px 15px 15px;
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
 
         h2 {
             font-size: 23px;
@@ -161,7 +164,7 @@ button {
             text-align: center;
             text-transform: uppercase;
             line-height: 1.2;
-            margin-bottom: 30px;
+            margin-bottom: 5px;
         }
 
         .plan {

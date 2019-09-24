@@ -1,8 +1,8 @@
 ﻿<?php
 $packets = include('config.php');
-if (isset($_COOKIE["bpa_packets"])) {
-  if ($_COOKIE["bpa_packets"] == 'gameOver') $gameOver = true; else $gameOver = false;
-} else $gameOver = false;
+if (isset($_COOKIE["bpa_packets2"])) {
+  if ($_COOKIE["bpa_packets2"] == 'gameOver2') $gameOver2 = true; else $gameOver2 = false;
+} else $gameOver2 = false;
 
 
 if (isset($_GET["tag"])) {
@@ -34,25 +34,29 @@ if (isset($_GET["tag"])) {
             </h1>
             <div class="header__content">
                 <form id="main_form" action="https://api.bpa.bz/api.client2crm/" method="POST" novalidate="novalidate">
-                    <input type="text" name="firstname" placeholder="Введите ваше имя">
-                    <input type="text" name="phone" placeholder="Введите ваш телефон" >
-                    <input type="email" name="email" placeholder="введите ваш e-mail">
+                    <input type="text" name="firstname" placeholder="Введите ваше имя" required>
+                    <input type="text" name="phone" placeholder="Введите ваш телефон" required>
+                    <input type="email" name="email" placeholder="введите ваш e-mail" required>
 
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
-                        <label class="custom-control-label" for="customRadio1"> Стандарт &nbsp;&nbsp;&nbsp;<span class="old_price">$597</span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $537 - 10% <span style="font-size:18px">скидка</span></label>
+                        <input type="radio" id="customRadio11" name="customRadio" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="customRadio11"> <?php echo $packets[0]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[0]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[0]["price"]?> - 10% <span style="font-size:18px">скидка</span></label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                        <label class="custom-control-label" for="customRadio2"> VIP &nbsp;&nbsp;&nbsp;<span class="old_price">$1597</span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $1'437 - 10%  <span style="font-size:18px">скидка</span></label>
+                        <input type="radio" id="customRadio22" name="customRadio" class="custom-control-input" checked>
+                        <label class="custom-control-label" for="customRadio22"> <?php echo $packets[1]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[1]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[1]["price"]?> - 10% <span style="font-size:18px">скидка</span></label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" id="customRadio33" name="customRadio" class="custom-control-input">
+                        <label class="custom-control-label" for="customRadio33"> <?php echo $packets[2]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[2]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[2]["price"]?> - 10%  <span style="font-size:18px">скидка</span></label>
                     </div>
 
-                     <input type="hidden" name="c2cFormId" value="coursestndart" />
-          <input type="hidden" name="packet" class="form-packet" id="packet-all-form" value="Стандарт" />
-          <input type="hidden" name="price" class="form-price" value="537" />
-          <input type="hidden" name="convert_rub" class="form-price-rub" value="36000" />
-          <?php if (!empty($tag)) echo '<input type="hidden" name="add_tag" value="' . $tag . '" />'?>
-                    <button type="submit">Заказать <img src="img/btn_arr.png" alt="btn_arr"></button>
+                     <input type="hidden" name="c2cFormId" value="web_offer" />
+                     <input type="hidden" name="packet" class="form-packet" id="packet-all-form" value="Базовый" />
+                     <input type="hidden" name="price" class="form-price" value="<?php echo $packets[0]["price"]?>" />
+                     <input type="hidden" name="convert_rub" class="form-price-rub" value="<?php echo $packets[0]["price_rub"]?>" />
+                     <?php if (!empty($tag)) echo '<input type="hidden" name="add_tag" value="' . $tag . '" />'?>
+                     <button type="submit">Заказать <img src="img/btn_arr.png" alt="btn_arr"></button>
                 </form>
                 <div class="desc">
                     <img src="img/pc.png" alt="PC">
@@ -63,23 +67,57 @@ if (isset($_GET["tag"])) {
                 </div>
             </div>
             <div class="header__condition">
-                <h2>СПЕЦ УСЛОВИЯ ДЛЯ МАРАФОНА</h2>
-                <div class="plan">
-                    <!--<div class="item">
-                        <span>ДЕНЬ 3</span>
-                        <p>20% от спец. <br> стоимости курса</p>
+                <h2>Специальная цена действует еще:</h2>
+                <p id="timer"></p>
+
+                <div id="timerValues">
+                    <div>
+                        <span class="days">00</span>
+                        <div class="smalltext">Дни</div>
                     </div>
-                    <img src="img/condition_arr.png" alt="condition_arr">
-                    <div class="item">
-                        <span>ДЕНЬ 4</span>
-                        <p>15% от спец. <br> стоимости курса</p>
+                    <div>
+                        <span class="hours">00</span>
+                        <div class="smalltext">Часы</div>
                     </div>
-                    <img src="img/condition_arr.png" alt="condition_arr">-->
-                    <div class="item" style="    margin: 0 auto;">
-                        <span>ДЕНЬ 5</span>
-                        <p>10% от спец. <br> стоимости курса</p>
+                    <div>
+                        <span class="minutes">00</span>
+                        <div class="smalltext">Минуты</div>
+                    </div>
+                    <div>
+                        <span class="seconds">00</span>
+                        <div class="smalltext">Секунды</div>
                     </div>
                 </div>
+                <style>
+                    #timerValues{
+                        font-family: sans-serif;
+                        color: #000;
+                        display: inline-block;
+                        font-weight: 100;
+                        text-align: center;
+                        font-size: 30px;
+                    }
+
+                    #timerValues > div{
+                        padding: 10px;
+                        border-radius: 3px;
+                        background: #FEEC1B;
+                        display: inline-block;
+                    }
+
+                    #timerValues div > span{
+                        padding: 15px;
+                        border-radius: 3px;
+                        background: rgb(195, 182, 31);
+                        display: inline-block;
+                        min-width: 65px;
+                    }
+
+                    .smalltext{
+                        padding-top: 5px;
+                        font-size: 16px;
+                    }
+                </style>
             </div>
         </div>
     </header> <!-- section-header.// -->
@@ -91,7 +129,7 @@ if (isset($_GET["tag"])) {
             <div class="tarifs_wrapp">
                 <div class="tarif">
                     <div class="head">
-                        <h3>Пакет "БАЗОВЫЙ"</h3>
+                        <h3>Пакет "<?php echo $packets[0]["form_view_name"]?>"</h3>
                     </div>
                     <div class="list">
                         <p>Запись тренинга в видеоформате</p>
@@ -103,15 +141,15 @@ if (isset($_GET["tag"])) {
                         <p>Набор Чек-листов (чек-лист Горничной, чек-лист Что должно быть в квартире, Правила проживания в квартире, Должностные инструкции для менеджера)</p>
                     </div>
                     <div class="old_price_wrapp">
-                        <span class="old_price">$447</span>
+                        <span class="old_price">$<?php echo $packets[0]["price_high"]?></span>
                         <span class="discount">-10%</span>
                     </div>
-                    <div class="new_price">$347</div>
+                    <div class="new_price actual_price_p3">$<?php echo $packets[0]["price"]?></div>
                     <a href="#formModal" class="btn" data-toggle="modal" data-target="#formModal">КУПИТЬ <img src="img/btn_arr_2.png" alt="btn_arr"></a>
                 </div>
                 <div class="tarif">
                     <div class="head">
-                        <h3>Пакет "Бизнес"</h3>
+                        <h3>Пакет "<?php echo $packets[1]["form_view_name"]?>"</h3>
                     </div>
                     <div class="list">
                         <p>Запись тренинга в видеоформате</p>
@@ -135,15 +173,15 @@ if (isset($_GET["tag"])) {
                         <p>WhatsApp чат - сообщество всех наших учеников (возможность найти себе наставника, партнера, совместно взять горничную или/и менеджера на работу, сдавать квартиры друг друга)</p>
                     </div>
                     <div class="old_price_wrapp">
-                        <span class="old_price">$897</span>
+                        <span class="old_price">$<?php echo $packets[1]["price_high"]?></span>
                         <span class="discount">-10%</span>
                     </div>
-                    <div class="new_price">$697</div>
+                    <div class="new_price actual_price_p3">$<?php echo $packets[1]["price"]?></div>
                     <a href="#formModal" class="btn" data-toggle="modal" data-target="#formModal">КУПИТЬ <img src="img/btn_arr_2.png" alt="btn_arr"></a>
                 </div>
                 <div class="tarif">
                     <div class="head">
-                        <h3>Пакет "VIP"</h3>
+                        <h3>Пакет "<?php echo $packets[2]["form_view_name"]?>"</h3>
                     </div>
                     <div class="list">
                         <p>Запись тренинга в видеоформате</p>
@@ -173,10 +211,10 @@ if (isset($_GET["tag"])) {
                         <p>Возможность консультирования в круглосуточном режиме по всем вопросам</p>
                     </div>
                     <div class="old_price_wrapp">
-                        <span class="old_price">$2997</span>
+                        <span class="old_price">$<?php echo $packets[2]["price_high"]?></span>
                         <span class="discount">-10%</span>
                     </div>
-                    <div class="new_price">$1997</div>
+                    <div class="new_price actual_price_p3">$<?php echo $packets[2]["price"]?></div>
                     <a href="#formModal" class="btn" data-toggle="modal" data-target="#formModal">КУПИТЬ <img src="img/btn_arr_2.png" alt="btn_arr"></a>
                 </div>
             </div>
@@ -194,29 +232,30 @@ if (isset($_GET["tag"])) {
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form id="main_form" action="https://api.bpa.bz/api.client2crm/" method="POST" novalidate="novalidate">
-                        <input type="text" name="firstname" placeholder="Введите ваше имя">
-                        <input type="text" name="phone" placeholder="Введите ваш телефон">
-                        <input type="email" name="email" placeholder="введите ваш e-mail">
+                    <form id="main_form2" action="https://api.bpa.bz/api.client2crm/" method="POST" novalidate="novalidate">
+                        <input type="text" name="firstname" placeholder="Введите ваше имя" required>
+                        <input type="text" name="phone" placeholder="Введите ваш телефон" required>
+                        <input type="email" name="email" placeholder="введите ваш e-mail" required>
 
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-                            <label class="custom-control-label" for="customRadio1"> Стандарт &nbsp;&nbsp;&nbsp;<span class="old_price">$597</span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $537 - 10% <span style="font-size:18px">скидка</span></label>
+                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="customRadio1"> <?php echo $packets[0]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[0]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[0]["price"]?> - 10% <span style="font-size:18px">скидка</span></label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadio2"> VIP &nbsp;&nbsp;&nbsp;<span class="old_price">$1597</span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $1'437 - 10%  <span style="font-size:18px">скидка</span></label>
+                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" checked>
+                            <label class="custom-control-label" for="customRadio2"> <?php echo $packets[1]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[1]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[1]["price"]?> - 10% <span style="font-size:18px">скидка</span></label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadio3"> <?php echo $packets[2]["form_view_name"]?> &nbsp;&nbsp;&nbsp;<span class="old_price">$<?php echo $packets[2]["price_high"]?></span> &nbsp;<img src="img/btn_arr.png" alt="btn_arr">&nbsp; $<?php echo $packets[2]["price"]?> - 10%  <span style="font-size:18px">скидка</span></label>
                         </div>
 
-                        <input type="hidden" name="c2cFormId" value="coursestndart">
-                        <input type="hidden" name="packet" class="form-packet" id="packet-all-form" value="Стандарт">
-                        <input type="hidden" name="price" class="form-price" value="537">
-                        <input type="hidden" name="convert_rub" class="form-price-rub" value="36000">
-                        <button type="submit">Заказать <img src="img/btn_arr.png" alt="btn_arr"></button>
-                        <input type="hidden" name="utm_source" value=""><input type="hidden" name="utm_medium" value=""><input type="hidden" name="utm_term" value=""><input type="hidden" name="utm_content" value="">
-                        <input type="hidden" name="utm_campaign" value="">
-                        <input type="hidden" name="url_referer" value="">
-                        <input type="hidden" name="Rget" value="">
+                         <input type="hidden" name="c2cFormId" value="web_offer" />
+                         <input type="hidden" name="packet" class="form-packet" id="packet-all-form" value="<?php echo $packets[0]["form_view_name"]?>" />
+                         <input type="hidden" name="price" class="form-price" value="<?php echo $packets[0]["price"]?>" />
+                         <input type="hidden" name="convert_rub" class="form-price-rub" value="<?php echo $packets[0]["price_rub"]?>" />
+                         <?php if (!empty($tag)) echo '<input type="hidden" name="add_tag" value="' . $tag . '" />'?>
+                         <button type="submit">Заказать <img src="img/btn_arr.png" alt="btn_arr"></button>
                     </form>
                 </div>
             </div>
@@ -233,10 +272,14 @@ if (isset($_GET["tag"])) {
 <script type="text/javascript" src = "//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
 <script type="text/javascript" src="//chitau.api.webds.net/plgform/js/dsPhoneFormatInput_min.js"></script>
 <script type="text/javascript" src="//chitau.api.webds.net/plgform/js/userAgent.0.0.1.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/easytimer.js@3/dist/easytimer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2/min/moment-with-locales.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 <script>
 
     //Формы
-    var FormIDs = "main_form";
+    var FormIDs = "main_form,main_form2";
     var UrlApi = "https://api.bpa.bz/api.client2crm/";
 
     $(document).ready(function () {
@@ -279,48 +322,120 @@ if (isset($_GET["tag"])) {
 </script>
 
 
-<script>
-    $(document).ready(function () {
+    <script>
+        $(document).ready(function () {
 
-        FormIDs_collection = FormIDs.split(',');
-        $.each(FormIDs_collection,function(k,FormID){
-            $("#"+FormID).validate({
-                rules: {
-                    firstname: {required: true, minlength: 2},
-                    phone: { required: true,minlength: 12},
-                    email: {required: true, email: true},
-                    agree:{required: true},
-                },
-                messages: {
-                    firstname: { required: "", minlength: ""},
-                    phone: {required: "", minlength: ""},
-                    email: "",
-                    agree: ""
-                },
-                errorPlacement: function(error, element) {
-                    $(element).closest('div').addClass('valid-error');
-                }
+            FormIDs_collection = FormIDs.split(',');
+            $.each(FormIDs_collection,function(k,FormID){
+                $("#"+FormID).validate({
+                    rules: {
+                        firstname: {required: true, minlength: 2},
+                        phone: { required: true,minlength: 12},
+                        email: {required: true, email: true},
+                        agree:{required: true},
+                    },
+                    messages: {
+                        firstname: { required: "", minlength: ""},
+                        phone: {required: "", minlength: ""},
+                        email: "",
+                        agree: ""
+                    },
+                    errorPlacement: function(error, element) {
+                        $(element).closest('div').addClass('valid-error');
+                    }
 
+                });
             });
+
         });
 
+    </script>
+    <script>
+    $( document ).ready(function() {
+        var timer = new easytimer.Timer();
+
+        /*timer.start({precision: 'secondTenths'});
+        timer.addEventListener('secondTenthsUpdated', function (e) {
+        $('#timer').html(timer.getTimeValues().toString(['hours', 'minutes', 'seconds', 'secondTenths']));
+    });
+    */
+    moment.locale('ru');
+
+    var now = moment();
+    if (Cookies.get('oldPriceTill2') == undefined) {
+        var date = moment().add(2, 'days');
+        // var date = moment().add(10, 'seconds');
+        Cookies.set('oldPriceTill2', date, { expires: 365 });
+    }
+    else {
+        var date = Cookies.get('oldPriceTill2');
+    }
+    //var date = "2019-02-22 11:00:00";
+    var until = moment(date);
+    // var timerTo = now.to(until, 's');
+    var timerTo = now.diff(until, 'seconds') * (-1);
+    console.log(timerTo);
+
+    if (timerTo>0) {
+        timer.start({countdown: true, precision: 'seconds', startValues: {seconds: timerTo}});
+        // $('#timer').html(timer.getTimeValues().toString());
+        timer.addEventListener('secondsUpdated', function (e) {
+            // $('#timer').html(timer.getTimeValues().toString(['days', 'hours', 'minutes', 'seconds']));
+
+            $('#timerValues .days').html(timer.getTimeValues().days);
+            $('#timerValues .hours').html(timer.getTimeValues().hours);
+            $('#timerValues .minutes').html(timer.getTimeValues().minutes);
+            $('#timerValues .seconds').html(timer.getTimeValues().seconds);
+
+            // $('#gettingTotalValuesExample .days').html(timer.getTotalTimeValues().days);
+            // $('#gettingTotalValuesExample .hours').html(timer.getTotalTimeValues().hours);
+            // $('#gettingTotalValuesExample .minutes').html(timer.getTotalTimeValues().minutes);
+            // $('#gettingTotalValuesExample .seconds').html(timer.getTotalTimeValues().seconds);
+        });
+    } else gameOver2();
+
+
+    timer.addEventListener('targetAchieved', function (e) {
+        gameOver2();
     });
 
-</script>
-<script>
-$( document ).ready(function() {
+    function gameOver2() {
+        Cookies.set('bpa_packets2', 'gameOver2', { expires: 365 });
+        $('#timer').html('Время вышло :-(');
+        $('.actual_price_p1').html('<?php echo $packets[0]["price_high"]?>$');
+        $('.actual_price_p2').html('<?php echo $packets[1]["price_high"]?>$');
+        $('.actual_price_p3').html('<?php echo $packets[2]["price_high"]?>$');
+        $('#popup_packet1').data('price', '<?php echo $packets[0]["price_high"] ?>');
+        $('#popup_packet1').data('price-rub', '<?php echo $packets[0]["price_rub_high"] ?>');
+        $('#popup_packet2').data('price', '<?php echo $packets[1]["price_high"] ?>');
+        $('#popup_packet2').data('price-rub', '<?php echo $packets[1]["price_rub_high"] ?>');
+        $('#popup_packet3').data('price', '<?php echo $packets[2]["price_high"] ?>');
+        $('#popup_packet3').data('price-rub', '<?php echo $packets[2]["price_rub_high"] ?>');
+        $('.full_price').hide();
+        $('#timerValues').hide();
+        $('#timerValues .days').html("0");
+        $('#timerValues .hours').html("0");
+        $('#timerValues .minutes').html("0");
+        $('#timerValues .seconds').html("0");
+    }
 
     $('#customRadio1').change(function(){
-       $('[name="c2cFormId"]').val('coursestndart');
-       $('[name="packet"]').val('Стандарт');
-       $('[name="price"]').val('537');
-       $('[name="convert_rub"]').val('36000');
+       // $('[name="c2cFormId"]').val('coursebasic');
+       $('[name="packet"]').val('<?php echo $packets[0]["form_view_name"]?>');
+       $('[name="price"]').val('<?php echo $packets[0]["price"]?>');
+       $('[name="convert_rub"]').val('<?php echo $packets[0]["price_rub"]?>');
     });
     $('#customRadio2').change(function(){
-       $('[name="c2cFormId"]').val('coursevip');
-       $('[name="packet"]').val('VIP');
-       $('[name="price"]').val('1437');
-       $('[name="convert_rub"]').val('96000');
+       // $('[name="c2cFormId"]').val('coursestndart');
+       $('[name="packet"]').val('<?php echo $packets[1]["form_view_name"]?>');
+       $('[name="price"]').val('<?php echo $packets[1]["price"]?>');
+       $('[name="convert_rub"]').val('<?php echo $packets[1]["price_rub"]?>');
+    });
+    $('#customRadio3').change(function(){
+       // $('[name="c2cFormId"]').val('coursevip');
+       $('[name="packet"]').val('<?php echo $packets[2]["form_view_name"]?>');
+       $('[name="price"]').val('<?php echo $packets[2]["price"]?>');
+       $('[name="convert_rub"]').val('<?php echo $packets[2]["price_rub"]?>');
     });
 
 });
