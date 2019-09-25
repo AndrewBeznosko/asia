@@ -7,3 +7,16 @@ body {
         max-width: 1050px;
     }
 }
+
+.btn-success {
+    color: #000;
+    background-color: #21ff4b;
+    border-color: #21ff4b;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    padding: .7rem 2.2rem;
+    font-size: 1.5rem;
+    line-height: 1.7;
+    border-radius: .3rem;
+}
