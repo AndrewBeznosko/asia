@@ -1,0 +1,26 @@
+.sec_2 {
+    ul {
+        font-family: 'Verdana Regular';
+        padding-left: 0;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 5px;
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: block;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #3625d6;
+        }
+    }
+}
