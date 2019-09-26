@@ -1,0 +1,54 @@
+footer {
+    background-color: #353535;
+    color: #fff;
+
+    h1.title {
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: 18px;
+    }
+
+    li {
+        font-size: 1.1rem;
+        margin-bottom: 2px;
+    }
+
+    h4 {
+        margin-bottom: 1.2rem;
+        font-size: 1.7rem;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+
+        &[href*="tel"] {
+            font-size: 1.3rem;
+        }
+    }
+
+    .navbar-nav {
+        max-width: 195px;
+        width: 100%;
+        justify-content: space-between;
+
+        img {
+            width: 40px;
+        }
+    }
+
+    .nav-link {
+        padding-top: 1.1rem;
+        padding-bottom: 1.1rem;
+    }
+}
+
+.copyright {
+    font-family: 'Verdana Regular';
+}

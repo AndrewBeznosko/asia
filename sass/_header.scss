@@ -4,3 +4,28 @@ header {
         text-transform: uppercase;
     }
 }
+
+.header-socials {
+    position: relative;
+    max-width: 210px;
+    width: 100%;
+
+    .navbar-nav {
+        justify-content: space-between;
+    }
+
+    img {
+        width: 40px;
+    }
+
+    a[href*="tel"] {
+        padding-right: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .tels {
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}

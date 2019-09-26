@@ -16,8 +16,8 @@
 
 <body class="relative" data-spy="scroll" data-target=".navbar-landing">
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-md">
+        <nav class="navbar navbar-expand-md">
+            <div class="container">
                 <a class="navbar-brand d-md-none" href="#">Тимуровцы</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,25 +38,33 @@
                             <a class="nav-link" href="#">отзывы</a>
                         </li>
                     </ul>
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><img src="img/socials/wt.jpg" alt="" width="28px"></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><img src="img/socials/tg.jpg" alt="" width="28px"></a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#"><img src="img/socials/vb.jpg" alt="" width="28px"></a>
-                        </li>
-                    </ul>
+                    <div class="header-socials">
+                        <div class="navbar-expand-md">
+                            <ul class="navbar-nav">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><img src="img/socials/wt.png" alt=""></a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><img src="img/socials/tg.png" alt=""></a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#"><img src="img/socials/vb.png" alt=""></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tels">
+                            <a href="tel:380982280116">+38(098)-228-01-16</a>
+                            <br>
+                            <a href="tel:380982280116">+38(050)-018-80-01</a>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-
-        </div>
+            </div>
+        </nav>
     </header> <!-- section-header.// -->
 
     <!-- ========================= sec_1 ========================= -->
-    <section id="sec_1" class="sec_1">
+    <section id="sec_1" class="sec_1 pt-4">
         <div class="container">
             <h1 class="title">Тимуровцы</h1>
             <p class="undertitle">выбирите услугу и узнайте стоимость</p>
@@ -189,44 +197,77 @@
 
     <!-- ========================= sec_3 ========================= -->
     <section class="sec_3 py-5">
-        <div class="container">
+        <div class="container mb-5">
             <h2 class="sec_title">Отзывы</h2>
             <!-- comments: http://admin.cackle.me/admin/comment/68380/install  -->
-            <div id="mc-container"></div>
+            <div id="wpac-comment"></div>
             <script type="text/javascript">
-                cackle_widget = window.cackle_widget || [];
-                cackle_widget.push({
+                wpac_init = window.wpac_init || [];
+                wpac_init.push({
                     widget: 'Comment',
-                    id: 68380
+                    id: 21122
                 });
                 (function() {
+                    if ('WIDGETPACK_LOADED' in window) return;
+                    WIDGETPACK_LOADED = true;
                     var mc = document.createElement('script');
                     mc.type = 'text/javascript';
                     mc.async = true;
-                    mc.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cackle.me/widget.js';
+                    mc.src = 'https://embed.widgetpack.com/widget.js';
                     var s = document.getElementsByTagName('script')[0];
                     s.parentNode.insertBefore(mc, s.nextSibling);
                 })();
             </script>
-            <a id="mc-link" href="http://cackle.me">Comments system <b style="color:#4FA3DA">Cackl</b><b style="color:#F65077">e</b></a>
+            <a href="https://widgetpack.com" class="wpac-cr" style="display: none!important;">Comments System WIDGET PACK</a>
             <!-- /comments  -->
         </div>
     </section>
     <!-- ========================= /sec_3 ========================= -->
 
     <!-- ========================= FOOTER ========================= -->
-    <footer class="section-footer">
+    <footer class="section-footer py-5">
         <div class="container">
-            <section class=" row">
-                <div class="col-sm-6">
-
+            <h1 class="title mb-5 d-inline-block w-100">Тимуровцы</h1>
+            <section class=" row mt-2">
+                <div class="col-sm-5">
+                    <h4>наши услуги:</h4>
+                    <ul>
+                        <li>Электрика </li>
+                        <li>Сантехника</li>
+                        <li>Ремонт</li>
+                        <li>Ремонт техники</li>
+                        <li>домашний мастер</li>
+                        <li>Уборка</li>
+                        <li>комьютерная помощь</li>
+                        <li>погрузка</li>
+                    </ul>
                 </div>
-                <div class="col-sm-6">
-
+                <div class="col-sm-4">
+                    <h4>телефоны:</h4>
+                    <a href="tel:380982280116">+380982280116</a>
+                    <br>
+                    <a href="tel:380982280116">+380500188001</a>
+                    <div class="navbar-expand-md">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="img/socials/wt.png" alt=""></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="img/socials/tg.png" alt=""></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#"><img src="img/socials/vb.png" alt=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/map.jpg" alt="map" class="w-100">
                 </div>
             </section> <!-- //footer-top -->
         </div><!-- //container -->
     </footer>
+    <div class="copyright text-center text-light bg-dark py-2">© 2019 - г. Белгород-Днестровский</div>
     <!-- ========================= FOOTER END // ========================= -->
     <!-- Modal -->
     <div class="modal fade" id="formModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
