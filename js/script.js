@@ -12,22 +12,6 @@ $(document).ready(function() {
     */ ///////////////////////////////////////
 
 
-    //////////////////////// Prevent closing from click inside dropdown
-    $(document).on('click', '.dropdown-menu', function(e) {
-        e.stopPropagation();
-    });
-
-    ///////////////// fixed menu on scroll for desctop
-    if ($(window).width() > 768) {
-
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 125) {
-                $('.navbar-landing').addClass("fixed-top");
-            } else {
-                $('.navbar-landing').removeClass("fixed-top");
-            }
-        });
-    } // end if
 
     //////////////////////// Fancybox. /plugins/fancybox/
     if ($("[data-fancybox]").length > 0) { // check if element exists
@@ -50,8 +34,8 @@ $(document).ready(function() {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top - 50
-        }, 1000);
-        
+        }, 500);
+
     });
 });
 // jquery end
