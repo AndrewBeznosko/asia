@@ -14,11 +14,12 @@ body {
     border-color: #21ff4b;
 }
 
-.btn-group-lg>.btn, .btn-lg {
-    padding: .7rem 2.2rem;
+.btn-group-lg > .btn,
+.btn-lg {
+    padding: 0.7rem 2.2rem;
     font-size: 1.5rem;
     line-height: 1.7;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 .p-with-before {
@@ -66,4 +67,55 @@ body {
 .sec_title {
     text-align: center;
     font-size: 2.2rem;
+}
+// ==========================================================================
+// modal
+// ==========================================================================
+
+.modal-content {
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    border: none;
+}
+// ==========================================================================
+// table
+// ==========================================================================
+
+.table {
+    td {
+        font-family: 'Verdana Regular';
+        white-space: nowrap;
+    }
+
+    td,th {
+        white-space: nowrap;
+    }
+
+    thead th {
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .table {
+        border-radius: 8px;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .table_wrapp {
+        border-radius: 8px;
+        padding: 5px;
+        background: #FFFFFF;
+        z-index: 46;
+        display: block;
+
+        .table_responsive {
+            box-shadow: inset -20px 0 35px -20px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            padding: 0 16px;
+        }
+    }
 }
