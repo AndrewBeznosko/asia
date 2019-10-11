@@ -70,32 +70,13 @@ if (isset($_GET["tag"])) {
                 </p>
             </div>
         </div>
-        <div class="header__condition">
-            <h2 style="margin-bottom:0">В ПАКЕТЕ ДОКУМЕНТОВ, ВЫ ПОЛУЧАЕТЕ</h2>
-            <!--            <div class="plan">-->
-            <!--<div class="item">
-                <span>ДЕНЬ 3</span>
-                <p>20% от спец. <br> стоимости курса</p>
-            </div>
-            <img src="img/condition_arr.png" alt="condition_arr">
-            <div class="item">
-                <span>ДЕНЬ 4</span>
-                <p>15% от спец. <br> стоимости курса</p>
-            </div>
-            <img src="img/condition_arr.png" alt="condition_arr">-->
-            <!--                <div class="item" style="    margin: 0 auto;">-->
-            <!--                    <span>ДЕНЬ 5</span>-->
-            <!--                    <p>10% от спец. <br> стоимости курса</p>-->
-            <!--                </div>-->
-            <!--            </div>-->
-        </div>
     </div>
 </header> <!-- section-header.// -->
 
 <!-- ========================= sec_1 ========================= -->
 <section class="sec_tarifs with_after" id="sec_1">
     <div class="container">
-        <h2 class="sec_title">Что входит в каждый пакет: </h2>
+        <h2 class="sec_title">Что входит в пакет: </h2>
         <div class="tarifs_wrapp">
             <div class="tarif">
                 <div class="head">

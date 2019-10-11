@@ -148,7 +148,11 @@ button {
 
 button img {
     display: inline-block;
-    margin-right: 10px
+    margin-right: 10px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 button:hover {
@@ -273,7 +277,7 @@ button:hover {
 .tarif {
     background-color: #fff;
     box-shadow: 0 10px 32px 0 rgba(45, 45, 45, 0.21);
-    max-width: 491px;
+    max-width: 600px;
     padding-bottom: 45px;
     margin-bottom: 40px
 }
@@ -510,7 +514,14 @@ a.btn:hover {
 
 .btn-hover.color-4 {
     background-image: linear-gradient(-45deg, #ffd53d, #ef9d43, #350572, #ffd53d, #ef9d43, #350572, #ffd53d, #ef9d43, #350572, #ffd53d);
-    box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    /* box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75); */
+    box-shadow: none;
+    border-radius: 5px;
+    font-size: 20px;
+    letter-spacing: .5px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
 }
 
 .btn-hover:hover {
