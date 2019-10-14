@@ -89,14 +89,14 @@ if (isset($_POST['bGO'])) {
             </div>
         </div>
         <div class="header__content row d-flex align-items-start justify-content-between m-0">
-            <div class="col-6 header__content__title mt-4 d-flex flex-column align-items-center">
+            <div class="col-12 col-lg-6 header__content__title mt-4 d-flex flex-column align-items-center">
                 <img alt="" class="mb-5" src="./img/tick.png">
                 <h2>СУПЕР, ВЫ В СПИСКЕ УЧАСТНИКОВ<br></h2>
                 <span>прямо сейчас перейдите на свою почту</span>
                 <p class="mt-3">и заберите бонус "Бизнес на салфетке"</p>
 
             </div>
-            <div class="col-6 header__content__images">
+            <div class="col-12 col-lg-6 header__content__images">
                 <img alt="" src="./img/bigbook.png">
                 <img class="sub-image" alt="" src="./img/mail.png">
             </div>

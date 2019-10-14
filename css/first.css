@@ -9,6 +9,10 @@
     padding: 0 3%;
 }
 
+.container {
+    max-width: 1340px;
+}
+
 .header__progress-box__percent .main-percent {
     font-size: 40px;
     color: #ffe54e;
@@ -33,7 +37,8 @@
     left: calc(50% - 128px);
 
 }
-.header__progress-box__percent .bg-percent.bg-percent__second{
+
+.header__progress-box__percent .bg-percent.bg-percent__second {
     left: calc(50% - 170px);
 }
 
@@ -149,3 +154,13 @@
     opacity: .3;
 }
 
+@media (max-width: 767px) {
+    .header__content__title img {
+        max-width: 350px;
+    }
+    .header__content__bonus-box img {
+        position: absolute;
+        left: -35px;
+        top: 57px;
+    }
+}

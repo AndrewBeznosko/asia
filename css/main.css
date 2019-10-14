@@ -544,3 +544,28 @@ a.btn:hover {
     }
 }
 
+
+
+/*.progress-bar--start {*/
+/*    animation-duration: 5s;*/
+/*    animation-name: start;*/
+/*    animation-timing-function: ease-in-out;*/
+/*    animation-iteration-count: 1;*/
+/*    -webkit-animation-fill-mode: forwards; !* Chrome 16+, Safari 4+ *!*/
+/*    -moz-animation-fill-mode: forwards;    !* FF 5+ *!*/
+/*    -o-animation-fill-mode: forwards;      !* Not implemented yet *!*/
+/*    animation-fill-mode: forwards;*/
+/*}*/
+
+/*@keyframes start {*/
+/*    from {*/
+/*        width: 0%;*/
+
+/*    }*/
+
+/*    to {*/
+/*        width: 100%;*/
+
+/*    }*/
+/*}*/
+

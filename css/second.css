@@ -1,9 +1,11 @@
 header {
     padding: 0 0 100px !important;
 }
+
 .header__progress-box__percent {
     padding: 0 7%;
 }
+
 .container {
     max-width: 1340px;
 }
@@ -47,6 +49,7 @@ header {
 }
 
 .header__content__images {
+    min-height: 350px;
     position: relative;
 }
 
@@ -62,4 +65,45 @@ header {
     z-index: 0;
     top: 60px;
     left: 100px;
+}
+
+
+@media (max-width: 767px) {
+    header {
+        padding: 50px 0 40px !important;
+    }
+
+    .my-mb-5 {
+        margin-bottom: 10px;
+    }
+
+    .header__content {
+        padding: 20px 0 0;
+    }
+
+    .header__content__title h2 {
+        font-size: 30px;
+    }
+
+    .header__content__title p {
+        line-height: 35px;
+        font-size: 25px;
+    }
+
+    .header__content__images img {
+        max-width: 220px;
+    }
+
+    .header__content__images img.sub-image {
+        max-width: 260px;
+    }
+}
+@media (max-width: 320px) {
+    .header__content__images img {
+        max-width: 190px;
+    }
+
+    .header__content__images img.sub-image {
+        max-width: 200px;
+    }
 }

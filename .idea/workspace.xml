@@ -2,73 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e825b337-d9fd-4b44-9c73-5879f3e90bd7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/first.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/second.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/bigbook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/book.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/person.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/tick.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thankspage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ftpconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/futurapt-bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/futurapt-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/futuraptbold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/futuraptbold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/futuraptbold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/ofont.ru_futura pt (1).eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1 copy.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/12.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/17.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1a33314832d1374bff8e044997fb30cf-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1da179e1ca4c20eb92245134f86dc5ff-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/1f2d4d1c9964d5a3cb15fb6010f74cf6-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/22-u1908-fr.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/3c8bcef7dd3cf7a0f543e07bc5dd5f7f-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4251f8c0ea3b336bd5a87d6e9de084a6-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4390ba9b67a7971206f9dace8ffeafb6-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/4390ba9b67a7971206f9dace8ffeafb6-lossy406x441.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/45747.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/65846.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/695649645.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/7176184f5a5944cf7e7b101937443330-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/7176184f5a5944cf7e7b101937443330-lossy247x165.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/79748942fb9961290e08c91e978749d2-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/875685.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/88f795e14963b64476336ac36caa9c6d-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/90c8438b4bea1b6a207e11885b41eb53-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/930ea25a94fb24c5207c1766ac3a778a-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/a7054f3823ab439a518420021b862ded-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/be02ac3b00b180dc22b6ae5af30843ba-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/c240b03a0610e4da8b0b1ce77e1aef10-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/c3ab59f50a70a5e045faf9af8b5f5d04-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/c41475d97af184feb3076d4ca46bd9dc-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/c9c97ebf17811c125216cc46238e91e2-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/cloud-5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/d576c54a45002ad03d7a96c161c5656a-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/eac5eb37b16e4b285d4c964c90fc4ec6-lossy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/lol.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/money-bag-with-dollar-symbol.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_andrew.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_toha.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/first.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/first.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/second.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/second.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thankspage.php" beforeDir="false" afterPath="$PROJECT_DIR$/thankspage.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thankspage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+            <state relative-caret-position="468">
+              <caret line="100" column="38" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="38" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -93,26 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/second.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/first.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="556">
+              <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -120,8 +40,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+            <state relative-caret-position="331">
+              <caret line="546" selection-start-line="546" selection-end-line="546" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/second.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/first.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="590">
+              <caret line="156" selection-start-line="156" selection-end-line="165" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -142,7 +80,6 @@
       <find>tarifs_wrapp</find>
       <find>59</find>
       <find>max-width:</find>
-      <find>progres</find>
       <find>7.5%</find>
       <find>-40</find>
       <find>header {</find>
@@ -151,8 +88,15 @@
       <find>bg-p</find>
       <find>header__content_</find>
       <find>3%</find>
-      <find>&lt;fo</find>
+      <find>@med</find>
       <find>50%</find>
+      <find>h2</find>
+      <find>header__content__images</find>
+      <find>&lt;fo</find>
+      <find>mb-</find>
+      <find>progres</find>
+      <find>-40p</find>
+      <find>ajax</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,11 +106,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.htaccess" />
-        <option value="$PROJECT_DIR$/css/main.css" />
-        <option value="$PROJECT_DIR$/css/first.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/css/second.css" />
+        <option value="$PROJECT_DIR$/css/first.css" />
         <option value="$PROJECT_DIR$/thankspage.php" />
+        <option value="$PROJECT_DIR$/css/second.css" />
+        <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
@@ -182,9 +126,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="431" />
+    <option name="y" value="161" />
+    <option name="width" value="823" />
+    <option name="height" value="526" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -216,6 +161,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -257,12 +203,12 @@
       <option name="presentableId" value="Default" />
       <updated>1570802780660</updated>
       <workItem from="1570802783456" duration="4502000" />
-      <workItem from="1571051946697" duration="9844000" />
+      <workItem from="1571051946697" duration="15280000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14346000" />
+    <option name="totallyTimeSpent" value="19782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -307,41 +253,41 @@
     <entry file="file://$PROJECT_DIR$/img/mail.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="61" column="14" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/first.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/second.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="726">
+          <caret line="102" column="21" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/thankspage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="8" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="40" selection-end-column="8" />
+        <state relative-caret-position="468">
+          <caret line="100" column="38" selection-start-line="100" selection-start-column="28" selection-end-line="100" selection-end-column="38" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/first.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="156" selection-start-line="156" selection-end-line="165" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="546" selection-start-line="546" selection-end-line="546" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="48" column="48" selection-start-line="48" selection-start-column="48" selection-end-line="48" selection-end-column="48" />
+        <state relative-caret-position="556">
+          <caret line="93" column="55" selection-start-line="93" selection-start-column="55" selection-end-line="93" selection-end-column="55" />
         </state>
       </provider>
     </entry>

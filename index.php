@@ -21,23 +21,23 @@
     <div class="container">
         <div class="header__progress-box">
             <div class="header__progress-box__percent">
-                <p class="bg-percent">50%</p>
-                <p class="main-percent">прогресс регистрации <span>50%</span></p>
+                <p class="bg-percent">0%</p>
+                <p class="main-percent">прогресс регистрации <span>0%</span></p>
 
                 <div class="progress">
-                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                         style="width: 50%"
-                         aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-bar progress-bar-striped progress-bar-animated"
+                         role="progressbar"
+                         aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
         </div>
         <div class="header__content row d-flex align-items-start justify-content-between m-0">
-            <div class="col-6 header__content__title mt-4">
+            <div class="col-12 col-lg-6 header__content__title mt-4">
                 <h2>ЗАВЕРШИТЕ РЕГИСТРАЦИЮ <br><span>НА ОНЛАЙН МАСТЕР-КЛАСС</span></h2>
                 <h1>"Как запустить бизнес на посуточной аренде и зарабатывать от $5'000 в месяц"</h1>
                 <img alt="" src="./img/person.png">
             </div>
-            <div class="col-5 header__content__form-box d-flex flex-column align-items-center justify-content-center">
+            <div class="col-12 col-lg-5 header__content__form-box d-flex flex-column align-items-center justify-content-center">
                 <div class="header__content__bonus-box mb-5">
                     <p class="bonus__main-title">и получите на ваш e-mail в подарок</p>
                     <p class="bonus__subtitle">видео-урок:"бизнес на салфетке"</p>
@@ -46,9 +46,9 @@
                 <form id="main_form" action="./thankspage.php" method="POST" novalidate="novalidate">
                     <h3 class="mb-4">ЗАВЕРШИТЕ РЕГИСТРАЦИЮ
                         Оставьте свои контактные данные </h3>
-                    <input type="text" name="fio" placeholder="Ваше имя">
-                    <input type="email" name="email" placeholder="ВАШ EMAIL">
-                    <input type="text" name="phone" placeholder="Ваш номер телефона">
+                    <input class="fio" type="text" name="fio" required placeholder="Ваше имя">
+                    <input class="email"  type="email" name="email" required placeholder="ВАШ EMAIL">
+                    <input class="phone" type="text" name="phone" required placeholder="Ваш номер телефона">
 
                     <input type="hidden" name="c2cFormId" value="coursestndart"/>
                     <input type="hidden" name="packet" class="form-packet" id="packet-all-form" value="Стандарт"/>
@@ -77,34 +77,34 @@
 <script>
     $(document).ready(function () {
 
-        FormIDs_collection = FormIDs.split(',');
-        $.each(FormIDs_collection, function (k, FormID) {
-            $("#" + FormID).validate({
-                rules: {
-                    firstname: {required: true, minlength: 2},
-                    phone: {required: true, minlength: 12},
-                    email: {required: true, email: true},
-                    agree: {required: true},
-                },
-                messages: {
-                    firstname: {required: "", minlength: ""},
-                    phone: {required: "", minlength: ""},
-                    email: "",
-                    agree: ""
-                },
-                errorPlacement: function (error, element) {
-                    $(element).closest('div').addClass('valid-error');
+        $('#main_form').submit(function (event) {
+            event.preventDefault();
+            let current_progress = 0;
+            let interval = setInterval(function () {
+                current_progress += 1;
+                $(".bg-percent, .main-percent span").html(current_progress + "%");
+                $(".progress-bar").width(current_progress + "%")
+                if (current_progress >= 100) {
+                    $.ajax({
+                        url: "./thankspage.php",
+                        type: "POST",
+                        data: {
+                            fio: $('#main_form .fio').val(),
+                            email: $('#main_form .email').val(),
+                            phone: $('#main_form .phone').val(),
+                        },
+                        dataType: "html",
+                        cache: false,
+
+                        complete: function () {
+                            window.location.href = "./thankspage.php";
+                        }
+                    });
+                    clearInterval(interval);
                 }
+            }, 44);
 
-            });
         });
-
-    });
-
-</script>
-<script>
-    $(document).ready(function () {
-
         $('#customRadio1').change(function () {
             $('[name="c2cFormId"]').val('coursestndart');
             $('[name="packet"]').val('Стандарт');
@@ -118,7 +118,8 @@
             $('[name="convert_rub"]').val('96000');
         });
 
-    });
+    })
+    ;
 
 
 </script>
