@@ -1,0 +1,151 @@
+.header__content {
+    padding: 100px 0 0;
+    max-width: unset !important;
+}
+
+.header__progress-box__percent {
+    position: relative;
+    z-index: 2;
+    padding: 0 3%;
+}
+
+.header__progress-box__percent .main-percent {
+    font-size: 40px;
+    color: #ffe54e;
+    font-family: "Bebas Neue";
+    font-weight: 700;
+    text-align: center;
+
+
+}
+
+
+.header__progress-box__percent .bg-percent {
+    position: absolute;
+    font-size: 182px;
+    color: #ffe54e;
+    font-family: "Bebas Neue";
+    font-weight: 700;
+    text-align: center;
+    z-index: -1;
+    opacity: .3;
+    top: -75px;
+    left: calc(50% - 128px);
+
+}
+.header__progress-box__percent .bg-percent.bg-percent__second{
+    left: calc(50% - 170px);
+}
+
+.header__progress-box__percent .progress-bar {
+    background-color: #ffe54e;
+}
+
+.header__progress-box__percent .progress {
+    height: 20px;
+}
+
+.progress-bar-striped {
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent) !important;
+}
+
+.header__content__title h1 {
+    color: #ffffff;
+    font-size: 32px;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    text-align: left;
+}
+
+.header__content__title h2 {
+    line-height: 55px;
+    font-size: 55px;
+    color: #ffd75d;
+    font-family: "Bebas Neue";
+    font-weight: 700;
+}
+
+.header__content__title h2 span {
+    font-size: 40px;
+    color: #ffd75d;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+}
+
+.header__content__bonus-box {
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(256, 256, 256, .9);
+    padding: 15px 0;
+    width: 100%;
+}
+
+.bonus__main-title {
+    font-size: 30px;
+    color: #7d50c3;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    text-align: center;
+}
+
+.bonus__subtitle {
+    font-size: 28px;
+    color: #ffffff;
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    text-align: center;
+    background-color: #7d50c3;
+}
+
+.header__content__form-box {
+    height: 100%;
+}
+
+.header__content__bonus-box img {
+    position: absolute;
+    left: -45px;
+    top: 7px;
+}
+
+#main_form {
+    background-color: #ffffff;
+}
+
+#main_form input::placeholder, #main_form input {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.2);
+
+}
+
+#main_form input {
+    padding: 30px 25px;
+    box-shadow: inset 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+#main_form h3 {
+    font-size: 30px;
+    color: #7d50c3;
+    font-family: "Bebas Neue";
+    font-weight: 700;
+    text-align: center;
+}
+
+#main_form .my-btn {
+    justify-content: center;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 500;
+    font-family: "Futura PT";
+    text-align: center;
+    position: relative;
+}
+
+#main_form .my-btn span {
+    position: absolute;
+    font-size: 46px;
+    color: #93761f;
+    font-family: "Futura PT";
+    text-align: center;
+    opacity: .3;
+}
+
