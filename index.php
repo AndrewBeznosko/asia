@@ -76,11 +76,10 @@ if (isset($_GET["tag"])) {
 <!-- ========================= sec_1 ========================= -->
 <section class="sec_tarifs with_after" id="sec_1">
     <div class="container">
-        <h2 class="sec_title">Что входит в пакет: </h2>
         <div class="tarifs_wrapp">
             <div class="tarif">
                 <div class="head">
-                    <h3>Пакет "Стандарт"</h3>
+                    <h3>Что входит в пакет:</h3>
                 </div>
                 <div class="list">
                     <p>Акт выполненных работ и счет фактура – Казахстан</p>
