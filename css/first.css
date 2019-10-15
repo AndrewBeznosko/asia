@@ -44,10 +44,12 @@
 
 .header__progress-box__percent .progress-bar {
     background-color: #ffe54e;
+    width: 50%;
 }
 
 .header__progress-box__percent .progress {
     height: 20px;
+    background-color: rgba(170, 150, 37, 0.5);
 }
 
 .progress-bar-striped {
@@ -116,7 +118,8 @@
     background-color: #ffffff;
 }
 
-#main_form input::placeholder, #main_form input {
+#main_form input::placeholder,
+#main_form input {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.2);
 
@@ -154,13 +157,159 @@
     opacity: .3;
 }
 
+
+
+
 @media (max-width: 767px) {
     .header__content__title img {
         max-width: 350px;
     }
+
     .header__content__bonus-box img {
         position: absolute;
         left: -35px;
         top: 57px;
+    }
+
+
+    .header__content__title {
+        padding-top: 0;
+    }
+
+    .header__content {
+        padding-top: 30px;
+    }
+
+    .header__content__title h2 {
+        line-height: 38px;
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    .header__content__title h2 span {
+        font-size: 30px;
+    }
+
+    .header__content__form-box {
+        flex-direction: column-reverse !important;
+        padding: 0;
+    }
+
+    .header__progress-box__percent .bg-percent {
+        position: absolute;
+        font-size: 165px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .header__progress-box__percent .main-percent {
+        font-size: 33px;
+    }
+
+    .header__content__title img {
+        display: none;
+    }
+
+    .header__content__title h1 {
+        font-size: 25px;
+    }
+
+    #main_form h3 {
+        font-size: 23px;
+    }
+
+    #main_form input {
+        padding: 16px 25px;
+    }
+
+    #main_form .my-btn span {
+        font-size: 43px;
+        opacity: 0.1;
+    }
+
+    #main_form .my-btn {
+        font-size: 17px;
+    }
+
+    .header__content__bonus-box img {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) !important;
+        bottom: 92%;
+        top: initial !important;
+        width: 120px;
+        height: auto;
+    }
+
+    .bonus__main-title {
+        font-size: 25px;
+    }
+
+    .bonus__subtitle {
+        font-size: 26px;
+    }
+
+    .header__content__bonus-box {
+        position: relative;
+        padding: 15px 0;
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    header {
+        padding-top: 30px !important;
+    }
+
+    .header__progress-box__percent .bg-percent {
+        font-size: 155px;
+    }
+
+    .header__progress-box__percent .main-percent {
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .header__content {
+        padding-top: 40px !important
+    }
+
+    .header__content__title {
+        padding: 0;
+    }
+
+    .header__content__title h2 {
+        line-height: .9;
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .header__content__title h2 span {
+        font-size: 29px;
+    }
+
+    .header__content__title h1 {
+        font-size: 23px;
+        margin-bottom: 15px;
+    }
+
+    #main_form {
+        padding: 15px 15px 25px !important;
+    }
+
+    #main_form h3 {
+        font-size: 23px;
+    }
+
+    #main_form input {
+        margin-bottom: 10px;
+    }
+
+    #main_form .my-btn {
+        font-size: 19px !important;
+    }
+
+    #main_form .my-btn span {
+        font-size: 51px !important;
+        opacity: 0.1;
     }
 }
