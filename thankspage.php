@@ -10,7 +10,7 @@ $user_phone = preg_replace('/[^0-9]/', '', $_POST['phone']);
 
 $utm_source = urlencode($_POST['utm']);
 $user_name = urlencode($_POST['fio']);
-$user_lists = "18838229";  // ID группы
+$user_lists = "18951521";  // ID группы
 
 if (isset($_POST['bGO'])) {
 
